@@ -1,0 +1,51 @@
+server:
+  port: 8462
+  contextPath: /staff-ui-api
+logging:
+  file: /java/CN_LOGS/staff-ui-api/StaffUiApi.log
+info:
+  component: Staff Ui Api
+ribbon:
+  ReadTimeout: 50000
+hystrix.command.default.execution.timeout.enabled: false
+security:
+  oauth2:
+    client:
+      client-id: staff-ui-api
+# added line     
+  basic:
+    enabled: false      
+#    
+#spring:
+  #boot:
+    #admin:
+      #url: http://localhost:8761/
+management:
+  security:
+    enabled: false
+    sessions: stateless
+  context-path: /management
+cn:
+  staff-ui:
+    features:
+      demo-disclaimer-enabled: false
+  staff-ui-api:
+    ums:
+      base-url: http://localhost:8461/ums
+    # Please configure valid config below to connect to UAA server
+    # Configure base-url, client-id, client-secret per environment
+    oauth2:
+      base-url: https://app.collabnotes.io/uaa
+      url: https://app.collabnotes.io/uaa/oauth/token
+      client:
+        client-id: staff-ui
+        client-secret: changeit
+    organization:
+      id: "vms"        
+---
+spring.profiles: standalone-ssl
+spring:
+  profiles:
+    include: ssl-default
+server:
+  contextPath: /staff-ui-api

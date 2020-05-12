@@ -1,0 +1,73 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiProperties",
+      "name": "cn.staff-ui",
+      "type": "gov.samhsa.c2s.staffuiapi.config.StaffUiProperties"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties",
+      "name": "cn.staff-ui-api",
+      "type": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties",
+      "name": "cn.staff-ui-api.oauth2",
+      "type": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties$Oauth2"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties$Oauth2",
+      "name": "cn.staff-ui-api.oauth2.client",
+      "type": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties$Oauth2$Client"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties",
+      "name": "cn.staff-ui-api.organization",
+      "type": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties$Organization"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiProperties",
+      "name": "cn.staff-ui.features",
+      "type": "gov.samhsa.c2s.staffuiapi.config.StaffUiProperties$Features"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties$Oauth2",
+      "name": "cn.staff-ui-api.oauth2.base-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties$Oauth2$Client",
+      "name": "cn.staff-ui-api.oauth2.client.client-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties$Oauth2$Client",
+      "name": "cn.staff-ui-api.oauth2.client.client-secret",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties$Oauth2",
+      "name": "cn.staff-ui-api.oauth2.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiApiProperties$Organization",
+      "name": "cn.staff-ui-api.organization.id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "gov.samhsa.c2s.staffuiapi.config.StaffUiProperties$Features",
+      "defaultValue": false,
+      "name": "cn.staff-ui.features.demo-disclaimer-enabled",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "name": "spring.cloud.service-registry.auto-registration.enabled",
+      "description": "A description for 'spring.cloud.service-registry.auto-registration.enabled'",
+      "type": "java.lang.String"
+    }
+  ]
+}
