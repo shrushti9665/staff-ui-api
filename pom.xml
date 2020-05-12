@@ -31,7 +31,7 @@
 		<c2s.oauth2.version>1.18.0</c2s.oauth2.version>
 		<c2s.validator-extension.version>1.18.0</c2s.validator-extension.version>
 		<logstash-logback-encoder.version>4.11</logstash-logback-encoder.version>
-		<hapi.fhir.version>3.0.0</hapi.fhir.version>
+		<hapi.fhir.version>5.0.0</hapi.fhir.version>
 	</properties>
 
 
